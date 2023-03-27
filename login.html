@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+
+    <style>
+        :root{
+            --theme-color: rgba(255, 119, 0, 0.826);
+        }
+   
+        *{
+            font-family: Nunito;
+        }
+        .mycard{
+            /*border: 2px solid red;*/
+            background-color: white;
+            width: 30%;      
+            padding: 50px;   
+            box-sizing: border-box;
+            /* box-shadow: x-offset y-offset blur size color */
+            /* text-shadow: x-offset y-offset blur color */
+            box-shadow: 6px -6px 3px 0 rgba(0, 0, 0, 0.434);
+            border-left: 3px solid var(--theme-color);
+
+        }
+
+        body{
+            /*background-color: #ccc;*/
+            /* background-image: linear-gradient(50deg, rgb(121, 121, 241), rgb(230, 121, 249) ); */
+            background-image: url('https://img.freepik.com/premium-photo/wooden-tabletop-as-background-wood-texture-old-boards_84485-2896.jpg?w=2000');
+            background-size: cover;
+            backdrop-filter: blur(2px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .title{
+            text-align: center;
+            font-size: 30px;
+            font-family: Nunito ;
+
+        }
+
+        .myinput , .mybtn , .mylink1 , .mylink2{
+            display: block;
+
+        }
+
+        .myinput{
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-bottom: 2px solid gray;
+            background-color: #8e8c8c1f;
+        }
+
+        .mybtn{
+            background-color:var(--theme-color);
+            width: 100%;
+            padding: 10px;
+            color: white;
+            font-weight: bold;
+            border: none;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+        .mylink1{
+            text-align: center;
+            font-weight: bold;
+            text-decoration: none;
+            color: var(--theme-color);
+        }
+        .mylink2{
+            text-align: center;
+            text-decoration: none;
+            color: var(--theme-color);
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="mycard">
+        <h3 class="title">Login</h3>
+        <form>
+            <input class="myinput" type="email" placeholder="Enter E-mail address">
+            <input class="myinput" type="password" placeholder="Enter password">
+            <button class="mybtn">Submit</button>
+
+        </form>
+        <a href="" class="mylink1">or Sign up</a>
+        <a href="" class="mylink2">Forgot password</a>
+        
+        
+    </div>
+</body>
+</html>

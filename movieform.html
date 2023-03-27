@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Booking</title>
+    <link rel="shortcut icon" href="favicon2.ico" type="image/x-icon">
+    <link rel="stylesheet" href="movieformstyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+</head>
+<body>
+    <h2>Movie-booking.com</h2>
+
+    <div class="mycard1">
+        <form>
+            <input class="details" type="text" required placeholder="Enter your name">
+    
+            <input class="details" type="number" required placeholder="Enter your contact number">
+  
+            <input class="details" type="email" placeholder="Enter your e-mail address">
+ 
+            <input class="details" type="date" required placeholder="Choose the date">
+            
+            <input class="details" type="number" list="seats" required placeholder="Choose no. of seats">
+            <datalist id="seats">
+                <option>1</option> <option>2</option> <option>3</option>  <option>4</option> <option>5</option>
+                <option>6</option> <option>7</option> <option>8</option>  <option>9</option> <option>10</option>
+            </datalist>
+ 
+            <input class="details" type="text" list="time" required placeholder="Choose time">
+            <datalist id="time">
+                <option>9AM-12PM</option> <option>12PM-3PM</option> <option>3PM-6PM</option> <option>6PM-9PM</option>
+                <option>9PM-12AM</option>
+            </datalist>
+
+            <div class="movie">
+                <label style="font-weight: bold; font-size: medium;">Pathaan(Action/Thriller) </label>
+                <input type="radio" name="movie" id="Pathaan">
+                <br> <p>Action/Thriller</p>
+                <img src="https://upload.wikimedia.org/wikipedia/en/c/c3/Pathaan_film_poster.jpg" alt="Pathaan" height="100px" width="80px">
+                <br><br>
+                <label style="font-weight: bold; font-size:medium;">Avatar: The Way of Water </label>
+                <input type="radio" name="movie" id="Avatar">
+                <p>Action/Fantasy/Sci-Fi</p>
+                <img src="https://upload.wikimedia.org/wikipedia/en/5/54/Avatar_The_Way_of_Water_poster.jpg" alt="Avatar: The Way of Water" height="100px" width="80px"> <br><br>
+                <label style="font-weight: bold; font-size: medium;">Ant-Man and the Wasp: Quantumania </label>
+                <input type="radio" name="movie" id="Ant-Man">
+                <p>Action/Sci-Fi</p>
+                <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Ant-Man_and_the_Wasp_Quantumania_poster.jpg" alt="Ant-Man and the Wasp: Quantumania" height="100px" width="80px"><br><br>
+                <label style="font-weight: bold; font-size: medium;">Shehzada </label>
+                <input type="radio" name="movie" id="Shehzada">
+                <br> <p>Action/Drama</p>
+                <img src="https://upload.wikimedia.org/wikipedia/en/4/4c/Shehzada_2023_film_poster.jpg" alt="Shehzada" height="100px" width="80px"> <br><br>
+            </div>  
+
+
+            <button class="btn"> Book</button>
+        </form>
+    </div>
+</body>
+</html>

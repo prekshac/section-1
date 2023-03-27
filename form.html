@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Admission form</title>
+</head>
+<body>
+    <h1>Student Admission form</h1>
+    <form>
+        <label>Full Name</label>
+        <input type="text" required>
+        <br><br>
+
+        <label>Email Address</label>
+        <input type="email" required>
+        <br><br>
+
+        <label>Contact number</label>
+        <input type="number" required>
+        <br><br>
+
+        <label>Address</label>
+        <textarea rows="5" cols="30"></textarea>
+        <br><br>
+
+        <label>Gender</label>
+        <input type="radio" name="gender" >Male
+        <input type="radio"  name="gender">Female
+        <input type="radio"  name="gender">Other
+        <br><br>
+
+        <input type="checkbox">I accept terms and conditions
+        <br><br>
+
+        <label>State</label>
+        <select >
+            <option>UP</option>
+            <option>Bihar</option>
+            <option>Delhi</option>
+            <option>MP</option>
+        </select>
+        <br><br>
+
+        <label >Course</label>
+        <input type="text" list="course">
+        <datalist id="course">
+            <option>BCA</option>
+            <option>MCA</option>
+            <option>B.Tech</option>
+        </datalist>
+
+
+        <button>Submit</button>
+    </form>
+</body>
+</html>
